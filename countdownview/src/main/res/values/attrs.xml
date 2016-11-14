@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="CountDownView">
+      <attr name="backgroundColor" format="color"/>
+      <attr name="roundColor" format="color" />
+      <attr name="roundProgressColor" format="color" />
+      <attr name="roundWidth" format="dimension" />
+      <attr name="text" format="string" />
+      <attr name="textSize" format="dimension"/>
+      <attr name="textColor" format="color" />
+      <attr name="countdownTime" format="integer"/>
+  </declare-styleable>
+
+
+</resources>
+
+
+

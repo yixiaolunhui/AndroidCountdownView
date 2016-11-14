@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/first_image_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dalong.countdownview.CountDownView
+        android:id="@+id/countDownView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        app:roundColor="@color/roundColor"
+        app:backgroundColor="@color/backgroundColor"
+        app:roundProgressColor="@color/roundProgressColor"
+        app:countdownTime="10000"
+        app:roundWidth="3dp"
+        app:textSize="16sp"
+        app:text="点击跳过"
+        app:textColor="@color/textColor"
+        />
+
+</RelativeLayout>
