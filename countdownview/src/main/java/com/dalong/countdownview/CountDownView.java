@@ -193,8 +193,15 @@ public class CountDownView  extends View implements View.OnClickListener {
      * 开始倒计时
      */
     public void startCountdown() {
+        if(mRoundProgress>=360)mRoundProgress=0;
         if(mOnCountDownListener!=null)mOnCountDownListener.start();
-        mHandler.sendEmptyMessageDelayed(mMsgWhat,1000);
+        if(mHandler!=null)mHandler.sendEmptyMessageDelayed(mMsgWhat,1000);
+    }
+    /**
+     * 停止倒计时
+     */
+    public void stopCountdown() {
+        if(mHandler!=null)mHandler.removeMessages(mMsgWhat);
     }
 
     /**

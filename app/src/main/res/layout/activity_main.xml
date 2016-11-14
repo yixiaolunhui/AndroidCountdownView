@@ -11,15 +11,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:padding="10dp"
+        android:padding="20dp"
         app:roundColor="@color/roundColor"
         app:backgroundColor="@color/backgroundColor"
         app:roundProgressColor="@color/roundProgressColor"
         app:countdownTime="10000"
         app:roundWidth="3dp"
-        app:textSize="16sp"
+        app:textSize="18sp"
         app:text="点击跳过"
         app:textColor="@color/textColor"
         />
 
+
+    <LinearLayout
+        android:layout_below="@+id/countDownView"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="开始"
+            android:onClick="onStart"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="停止"
+            android:onClick="onStop"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </RelativeLayout>

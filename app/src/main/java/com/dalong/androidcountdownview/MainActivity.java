@@ -3,7 +3,7 @@ package com.dalong.androidcountdownview;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
-
+import android.view.View;
 import com.dalong.countdownview.CountDownView;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +31,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    /**
+     * 开始
+     * @param view
+     */
+    public void onStart(View view) {
         countDownView.startCountdown();
+    }
+
+    /**
+     * 停止
+     * @param view
+     */
+    public void onStop(View view) {
+        countDownView.stopCountdown();
     }
 }
