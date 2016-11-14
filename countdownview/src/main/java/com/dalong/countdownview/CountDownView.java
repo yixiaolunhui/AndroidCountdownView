@@ -17,7 +17,7 @@ import android.view.View;
 
 
 /**
- * 倒计时view  圆形 长方形广告倒计时
+ * 倒计时view  圆形广告倒计时
  * Created by dalong on 2016/11/14.
  */
 
@@ -85,6 +85,7 @@ public class CountDownView  extends View implements View.OnClickListener {
     private void init() {
         if(TextUtils.isEmpty(mText))mText=mDefultText;
         setOnClickListener(this);
+        //求出每秒需要前进的度数
         mProgressPart=360/(mCountdownTime/1000);
         mBackgroundPaint = new Paint();
         mBackgroundPaint.setAntiAlias(true);
