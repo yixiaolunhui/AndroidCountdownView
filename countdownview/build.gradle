@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.0"
@@ -28,4 +28,14 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.0.0'
     testCompile 'junit:junit:4.12'
+}
+
+
+publish {
+    userOrg = 'dalong982242260'
+    groupId = 'com.dalong'
+    artifactId = 'countdownview'
+    publishVersion = '1.0.0'
+    desc = '圆形倒计时'
+    website = 'https://github.com/dalong982242260/AndroidCountdownView'
 }
